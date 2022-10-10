@@ -1,6 +1,6 @@
 # Anti AFK
 
-A script for logging in/out in World of Warcraft for Windows.
+A script for logging in/out in WoW for Windows.
 
 ## Dependencies
 !!! Be sure to be in the repository directory. !!!
