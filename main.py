@@ -30,15 +30,14 @@ class AntiAFK:
             config = self._create_default_config()
         return config
 
-    def _create_default_config(self) -> str:
+    def _create_default_config(self) -> dict:
         config = {
             "wait_time": DEFAULT_WAIT_TIME,
             "logout_delay": DEFAULT_LOGOUT_DELAY,
             "login_delay": DEFAULT_LOGIN_DELAY,
         }
         with open(self.config_path, "w") as file:
-            json.dump(config, file
-            )
+            json.dump(config, file)
         return config
 
     def _write_command(self, input_str: str) -> None:
